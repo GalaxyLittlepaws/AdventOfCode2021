@@ -1,8 +1,5 @@
 <?php
 
-//count number of lines in input.txt
-$lines = count(file('input.txt'));
-
 //check each line to see if the number is lower than the one after it, if so add 1 to counter
 $counter = 0;
 for ($i = 0; $i < $lines; $i++) {
@@ -14,8 +11,6 @@ for ($i = 0; $i < $lines; $i++) {
 }
 
 //output result
-echo "There are $lines lines in the file";
-echo "\n";
-echo "There are $counter lines in the file that are lower than the next line";
+echo "There are $counter lines in the file that are higher than the previous line";
 
 ?>
