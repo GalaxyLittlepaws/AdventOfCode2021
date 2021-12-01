@@ -3,7 +3,7 @@
 //count number of lines in input.txt
 $lines = count(file('input.txt'));
 
-//convery input.txt to integer array
+//convert input.txt to integer array
 $input = file('input.txt');
 $input = array_map('intval', $input);
 
@@ -16,7 +16,6 @@ for ($i = 0; $i < $lines; $i++) {
         }
     }
 }
-
 
 //output the number of times the sum is greater than the previous sum
 echo "There are $counter sums that are greater than the previous sum.\n";
