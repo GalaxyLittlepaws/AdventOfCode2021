@@ -34,7 +34,6 @@ foreach (explode("\n", $input) as $line) {
     }
     // multiply sumF and sumD
     $solution = $sumF * $sumD;
-
 }
 
 // print solution
